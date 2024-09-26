@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="731563e4-d236-477d-aba2-f6d3ecca1eca">
+  <producedTypes>
+    <objectType typeId="b85c6e38-6149-4575-8ee9-437d91c6c414" valueTypeId="81c88e64-e7f5-43dd-b5e7-525d921ae6d2"/>
+    <refType typeId="59a59285-61a9-4c77-8276-630a45b065e8" valueTypeId="28d5561a-29ad-4cf4-8c2c-ef25ac8d5e16"/>
+    <selectionType typeId="f4d985f6-7c84-4b75-9440-3be2461a1d7f" valueTypeId="79464ff5-0a34-430e-9f18-65a1dad461fa"/>
+    <listType typeId="5c862097-4f20-4ecb-9ee8-677a96dd52c8" valueTypeId="b7d6254b-1bef-46a1-bee8-0ffc10a72402"/>
+    <managerType typeId="f1baa5ce-ba7c-49e7-921c-2384351a1c06" valueTypeId="6f5623a4-9281-43a3-98c0-25c771b8dea7"/>
+  </producedTypes>
+  <name>ПродажаБилетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажа билетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПродажаБилетов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Продажа билетов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Продажи билетов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="034c5cd4-1527-41da-b86b-b73e853975e7">
+    <name>Атракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dcbd01fb-881f-48a5-8562-5358b104a23a">
+    <name>СуммаДокмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма докмента</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
